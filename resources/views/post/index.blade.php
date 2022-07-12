@@ -24,5 +24,9 @@
             @endforeach
         </tbody>
     </table>
+
+    <div class="mt-4 d-flex justify-content-center">
+        {{ $posts->withQueryString()->links() }}
+    </div>
 </div>
 @endsection

@@ -4,6 +4,7 @@
     <h1>{{ $post->title }}</h1>
     <div>{{ $post->content }}</div>
     <div>{{ $post->likes }}</div>
+    <img src="{{ $post->image }}" alt="">
 
     <div>
         <a href="{{ route('post.edit', $post->id) }}" class="btn btn-success">Edit</a>
